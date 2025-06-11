@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 7a exercise </title>
+  </head>
+  <body>
+    <script>
+      /*function greet() {
+        console.log("hello");
+      }
+      greet() */
+
+      function greet(name , ) {
+        console.log(`hello ${name}`)
+      }
+      greet('dinesh')
+      greet('tarun08')
+      greet('simon')
+      greet()
+
+      function default1(name = "guest "){
+        console.log("hello " + name + " ! ");
+      }
+      default1();
+      default1('dinesh');
+      //---------------------------------------
+      function greet(name = "Guest", age = 18) {
+  console.log(`Hello, ${name}. You are ${age} years old.`);
+}
+
+greet("Alice", 25);  // Hello, Alice. You are 25 years old.
+greet("Bob");        // Hello, Bob. You are 18 years old.
+greet();             // Hello, Guest. You are 18 years old.
+
+    </script>
+  </body>
+</html>
