@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> objects </title>
+  </head>
+  <body>
+    <script>
+     /*
+     const product = {
+      name : "dinesh",
+      price : 8000
+     };
+     console.log(product);
+     console.log(product.name);
+     console.log(product.price);
+
+     */
+      /* console.log('talik' + '100');
+    console.log('2'+2+'2');
+    console.log(true - 'false'); 
+    console.log(NaN==NaN);
+    console.log(NaN===NaN);
+    */
+
+    /* const product2 = {
+      name: 'diensh',
+      ['delivery-time']: 'tarun',
+      rating: {
+        stars: 4.5, //object inside object
+        Count:67,
+        },
+        fun:  function functionname(){
+          console.log('this is a function inside a object'); //function inside object
+      }
+
+    };
+    console.log(product2.name);
+    console.log(product2['delivery-time']);
+    console.log(product2.rating.Count);
+    product2.fun();
+
+    console.log(typeof console.log) //function
+     console.log(JSON.stringify(product2)); // to make the object to string 
+
+     const JsonString = JSON.stringify(product2);
+
+     console.log(JSON.parse(JsonString)); //to again revort the sring to objects but 
+
+     //json does not support functions 
+    
+      */
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+      const object1 = {
+        message : 'hola'
+      }
+      const object2 = object1;
+
+      object1.message = 'good job ';
+      console.log(object1);
+      console.log(object2); //js only remembers reference like a link 
+
+      //we cannot comapre objects by value only possible with object references 
+      const object3 = {
+        message : 'good job '
+      };
+      console.log(object3 === object1); //false even thougn its good job both still reference is diff so its false 
+      console.log(object2 === object1);
+      //true becuz both references are the same
+
+      const object4 = {
+        message : 'good job '
+      };
+      // const message = object4.message;
+      const { message } = object4;
+      console.log(message);
+
+      //short hand property 
+      const object5 = {
+        message: message
+      };
+      console.log(object5);
+    </script>
+  </body>
+</html>
